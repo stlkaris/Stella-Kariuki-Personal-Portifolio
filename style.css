@@ -408,6 +408,7 @@ span{
 
 .education-content .content .year {
     font-size: 1.5rem;
+    font-weight: bold;
     color: var(--main-color);
     padding-bottom: .5rem;
 }
@@ -419,7 +420,7 @@ span{
 .education-content .content h3 {
     position: relative;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .education-content .content p{
@@ -632,13 +633,13 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--second-bg-color); 
 }
 
 .footer-text,
 .footer-iconTop {
     position: relative;
-}
+} 
 
 .footer p {
     font-size: 2rem;
@@ -701,7 +702,7 @@ span{
  .logo .animate,
  .navbar .animate,
  #menu-icon .animate,
- .home.show-animate .animate {
+ .home.show-animate .animate{
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
  }
@@ -715,15 +716,26 @@ span{
  .education .education-box .animate.scroll {
     width: 105%;
  }
+ .animate.scroll {
+    transition: 1s ease;
+    transition-delay: calc(.3s / var(--i));
+    animation: none;
+ }
+ 
+ .education .education-box .animate.scroll {
+    width: 105%;
+ }
 
  .about.show-animate .animate.scroll,
  .education.show-animate .animate.scroll,
  .skills.show-animate .animate.scroll,
  .contact.show-animate .animate.scroll,
- .footer.show-animate .animate.scroll{
+ .footer.show-animate .animate.scroll{ 
     transition-delay: calc(.3s * var(--i));
     width: 0;
  }
+ 
+
 
 /* BREAKPOINTS */
 
